@@ -6,12 +6,12 @@ URL shortener employing a psuedo-hash involving base62 encoding of a unique inte
 Also features two modes of thumbnail generation plus jQuery autocomplete based on [Alexa top sites](http://s3.amazonaws.com/alexa-static/top-1m.csv.zip).
 
 Core requirements:
-	* Apache2, PHP, MySQL
-	* mod_rewrite
-	* ImageMagick
-	* [CutyCapt](http://cutycapt.sourceforge.net/) and Xvfb (X virtual framebuffer)
-	* or [PhantomJS](http://phantomjs.org/)
-	* [GeoIP](http://dev.maxmind.com/geoip/legacy/install/city/)
+* Apache2, PHP, MySQL
+* mod_rewrite
+* ImageMagick
+* [CutyCapt](http://cutycapt.sourceforge.net/) and Xvfb (X virtual framebuffer)
+* or [PhantomJS](http://phantomjs.org/)
+* [GeoIP](http://dev.maxmind.com/geoip/legacy/install/city/)
 
 Installation instructions:
 * Create a MySQL database + user and grant permissions
