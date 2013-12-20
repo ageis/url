@@ -1,0 +1,85 @@
+		body {
+			font: 1em "Trebuchet MS", Verdana, Helvetica, Arial, Sans-Serif;
+			text-align: center;
+			color: #FFFFFF;
+			background-color: #00000;
+			margin-top: 2em;
+		}		
+		h1 {
+			font-size: 2em;
+			padding: 0;
+			margin: 0;
+		}
+		h4 {
+			font-size: 1em;
+			font-weight: bold;
+		}		
+		form {
+			width: 30em;
+			background-color: #000000;
+			color: #fff;
+			border: 1px solid #c0c0c0;
+			margin-left: auto;
+			margin-right: auto;
+			padding: 1em;
+		}
+		fieldset {
+			border: 0;
+			margin: 0;
+			padding: 0;
+		}		
+		a {
+			color: #00ff00;
+			text-decoration: none;
+			font-weight: bold;
+		}
+		a:visited {
+			color: #ff00ff;
+		}
+		a:hover {
+			color: #00ffff;
+		}
+		.error, .success {
+			font-size: 1.2em;
+		}		
+		.error {
+			color: #ff0000;
+		}		
+		.success {
+			color: #ffffff;
+		}
+		input { 
+			background-color: #d0d0d0; 
+			border-color: #808080; 
+			color: #000; 
+			font-family: Trebuchet MS, Verdana, Helvetica, sans-serif; 
+			font-size: 14pt;
+			margin: .2em;
+		}
+		.icon {
+			image-rendering: optimizeQuality;
+			max-height: 200px;
+		}
+		.icon:hover {
+			border:2px solid rgba(64,255,64,1);
+		}
+		.attr {
+			font-size: 10pt;
+		}
+		.ui-autocomplete-loading { background: white url('includes/images/anim_16x16.gif') right center no-repeat; 
+		}
+		.submit {
+			color: #FFFFFF;
+			background: #404040;
+			border: 2px solid #FFF;
+		}			
+		.submit:hover, .submit:focus {		
+			background: #c0c0c0;
+			color: #000;
+			border: 2px solid #404040;
+		}
+		.submit:active {
+			color: #000000;
+			background: #00ff00;
+			border: 2px solid #00ffff;
+		}

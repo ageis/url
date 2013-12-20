@@ -1,0 +1,23 @@
+RewriteEngine On
+
+# set HTTP_HOST to your domain
+# adjust REQUEST_URI if necessary
+RewriteCond %{HTTP_HOST} ^example\.com$ [NC]
+RewriteBase /url/
+RewriteCond %{REQUEST_URI} !^/url/index\.php
+RewriteCond %{REQUEST_URI} !^/url/img/.*$
+RewriteCond %{REQUEST_URI} !^/url/includes/.*$
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*) /url/index.php?id=$1 [L]
+
+# example DocumentRoot config
+# RewriteCond %{HTTP_HOST} ^example\.com$ [NC]
+# RewriteBase /
+# RewriteCond %{REQUEST_URI} !^/index\.php
+# RewriteCond %{REQUEST_URI} !^/img/.*$
+# RewriteCond %{REQUEST_URI} !^/includes/.*$
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteRule ^(.*) /index.php?id=$1 [L]
+
