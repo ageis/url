@@ -6,12 +6,12 @@ URL shortener employing a psuedo-hash involving base62 encoding of a unique inte
 Also features two modes of thumbnail generation plus jQuery autocomplete based on [Alexa top sites](http://s3.amazonaws.com/alexa-static/top-1m.csv.zip).
 
 Core requirements:
-	Apache2, PHP, MySQL
-	mod_rewrite
-	ImageMagick
-	[CutyCapt](http://cutycapt.sourceforge.net/) and Xvfb (X virtual framebuffer)
-	or [PhantomJS](http://phantomjs.org/)
-	[GeoIP](http://dev.maxmind.com/geoip/legacy/install/city/)
+	* Apache2, PHP, MySQL
+	* mod_rewrite
+	* ImageMagick
+	* [CutyCapt](http://cutycapt.sourceforge.net/) and Xvfb (X virtual framebuffer)
+	* or [PhantomJS](http://phantomjs.org/)
+	* [GeoIP](http://dev.maxmind.com/geoip/legacy/install/city/)
 
 Installation instructions:
 * Create a MySQL database + user and grant permissions
@@ -29,7 +29,7 @@ Installation instructions:
 * If you intend to use all the features, these packages should be installed:
 		`imagemagick, cutycapt, php5-geoip, php5-mysql, php-db, php5-sqlite, xvfb, phantomjs`
 		
-You can retrieve thumbnails only like so:
+You can retrieve just the thumbnail like so:
 		`http://example.com/url/index.php?thumb=http://www.google.com`
 		
 The API will return a shortened URL in plaintext:
