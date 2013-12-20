@@ -15,16 +15,16 @@ Core requirements:
 
 Installation instructions:
 * Create a MySQL database + user and grant permissions
-* Import the ./includes/lilurl.sql file:
+* Import the `./includes/lilurl.sql` file:
 		`mysql -u <user> -p <database> < lilurl.sql`
-* Clone this repository from the DocumentRoot, so the files end up in /url
-* Edit ./includes/conf.php to suit your needs, enter the MySQL credentials from earlier
-# Edit .htaccess so that %{HTTP_HOST} matches your domain.
-* If you'd rather set this up on the DocumentRoot, you must set DOCROOT to TRUE, adjust $imgdir and modify .htaccess
+* Clone this repository from the DocumentRoot, so the files end up in `/url`
+* Edit `./includes/conf.php` to suit your needs, enter the MySQL credentials from earlier
+* Edit `.htaccess` so that `%{HTTP_HOST}` matches your domain.
+* If you'd rather set this up on the DocumentRoot, you must set `DOCROOT` to `TRUE`, adjust `$imgdir` and modify `.htaccess`
 * Make sure mod_rewrite is enabled: `a2enmod rewrite`
-* You can set a logo for the main page at ./includes/logo.png
-* Enabling LOG requires the PHP PEAR/PDO database abstraction layer and GeoIP database in /usr/share/GeoIP/GeoIPCity.dat (see link above)
-* Enabling THUMBNAIL requires /usr/local/bin/phantomjs by default
+* You can set a logo for the main page at `./includes/logo.png`
+* Enabling LOG requires the PHP PEAR/PDO database abstraction layer and GeoIP database in `/usr/share/GeoIP/GeoIPCity.dat` (see link above)
+* Enabling `THUMBNAIL` requires `/usr/local/bin/phantomjs` by default
 * Thumbnail width can be changed in the configuration file.
 * If you intend to use all the features, these packages should be installed:
 		`imagemagick, cutycapt, php5-geoip, php5-mysql, php-db, php5-sqlite, xvfb, phantomjs`
